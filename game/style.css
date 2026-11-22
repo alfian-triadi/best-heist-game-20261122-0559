@@ -1,0 +1,68 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #0b0a12; }
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: #e8dcc0;
+  display: flex;
+  justify-content: center;
+  padding: 12px 8px 20px;
+}
+.shell { width: 1280px; max-width: 100%; }
+.hud {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 8px 4px;
+  border-bottom: 1px solid #3a2f1e;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.hud-title {
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #d4af37;
+  font-weight: bold;
+  margin-right: auto;
+}
+.hud-item { font-size: 15px; color: #e8dcc0; white-space: nowrap; }
+.hud-alarm { display: flex; align-items: center; gap: 8px; font-size: 13px; letter-spacing: 2px; }
+.hud-alarm-bar {
+  display: inline-block;
+  width: 160px;
+  height: 12px;
+  background: #241d16;
+  border: 1px solid #6b5a2e;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#hud-alarm-fill {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #3fae5a;
+  transition: width 0.15s linear, background 0.2s;
+}
+#hud-alarm-pct { min-width: 36px; text-align: right; font-size: 14px; }
+#game {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #14101c;
+  border: 1px solid #3a2f1e;
+  border-radius: 4px;
+}
+.hud-message {
+  min-height: 22px;
+  margin: 8px 2px 4px;
+  font-size: 15px;
+  font-style: italic;
+  color: #c9b98a;
+}
+.help {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #8d8168;
+}
+.help b { color: #d4af37; font-weight: normal; }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Gilded Vault — a midnight heist</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="shell">
+  <header class="hud">
+    <div class="hud-title">THE GILDED VAULT</div>
+    <div class="hud-item" id="hud-loot">Loot 0/4</div>
+    <div class="hud-item" id="hud-coins">Coins 3</div>
+    <div class="hud-alarm">
+      <span id="hud-alarm-label">ALARM</span>
+      <span class="hud-alarm-bar"><span id="hud-alarm-fill"></span></span>
+      <span id="hud-alarm-pct">0%</span>
+    </div>
+    <div class="hud-item" id="hud-timer">0:00</div>
+  </header>
+  <canvas id="game" width="1280" height="720"></canvas>
+  <p class="hud-message" id="hud-message">Press Enter to begin the heist</p>
+  <footer class="help">
+    <span><b>WASD / arrows</b> move</span>
+    <span><b>Shift</b> sneak — slow, harder to spot</span>
+    <span><b>Click / Space</b> toss a coin to distract a guard</span>
+    <span><b>P</b> pause</span>
+    <span><b>M</b> mute</span>
+    <span><b>R</b> restart</span>
+  </footer>
+</main>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
